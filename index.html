@@ -1,118 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            .icon{
-                width: 30px;
-            }
-            ul{
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-            }
-            a{
-                color: blue;
-                text-decoration: none;
-            }
-            .submenu{
-                display: none;
-                position: absolute;
-                margin-left: 75px;
-                background-color: white;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            }
-            .shopcarsmenu:hover .submenu{
-                display: block;
-            }
-            .mainmenu{
-                display: none;
-                position: absolute;
-            }
-        </style>
+        <link rel="stylesheet" href="./stylesheets/style.css">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
     </head>
     <body>
-        <img class="icon" src="./homebtn.png">
-        <ul class="mainmenu">
-            <li><a href="">Home</a></li>
-            <li class="shopcarsmenu">
-                <a href="">Shop Cars</a>
-                <ul class="submenu">
-                    <li><a href="">By Make</a></li>
-                    <li><a href="">By Year</a></li>
-                </ul>
-            </li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-        <div>
-            <input class="queryInput" type="text">
-            <span  style="display:block;" class="feedbackMsg"></span>
+        <header class="header">
+            <div class="logoCon">
+                <button class="menuBtn">
+                    <img src="./images/menu_btn.png" alt="The Menu Button" class="menuBtnImg">
+                </button>
+                <button class="logoBtn">
+                    <img src="./images/molex_logo.png" alt="Company Logo" class="logoBtnImg">
+                </button>
+            </div>
+            <div class="searchCon">
+                <button class="searchBtn">
+                    <img src="./images/search_btn_black.png" alt="Search button" class="searchBtnImg">
+                </button>
+                <button class="loginBtn">
+                    <img src="./images/login_pic.png" alt="Sign in" class="loginBtnImg">
+                </button>
+            </div>
+        </header>
+        <div class="searchCon2">
+            <div class="searchBarCon">
+                <input type="text" placeholder="Search" class="searchBar">
+            </div>
+            <div class="searchBtnCon">
+                <button class="searchBtn">
+                    <img src="./images/search_btn_white.png" alt="" class="searchBtnImg">
+                </button>
+            </div>
         </div>
-        <button class="tokenizeBtn">Tokenize</button>
-        <div class="resultTokens"></div>
-        <script>
-            const icon=document.querySelector(".icon");
-            const mainmenu=document.querySelector('.mainmenu');
-            const queryInput=document.querySelector(".queryInput");
-            const feedbackMsg=document.querySelector(".feedbackMsg");
-            const tokenizeBtn=document.querySelector(".tokenizeBtn");
-            const resultTokens=document.querySelector(".resultTokens");
-
-            icon.addEventListener('click',()=>{
-                if(mainmenu.style.display="none"){
-                    mainmenu.style.display="block";
-                }else{
-                    mainmenu.style.display="none";
-                }
-            })
-            document.addEventListener('click',(e)=>{
-                if(!mainmenu.contains(e.target) && !icon.contains(e.target)){
-                    mainmenu.style.display="none";
-                }
-            })
-            tokenizeBtn.addEventListener('click',()=>{
-                if(!queryInput.value){
-                    feedbackMsg.textContent="Please enter a query";
-                    feedbackMsg.style.color="red";
-                }else{
-                    const tokens=queryInput.value.split(" ");
-                    tokens.forEach(element => {
-                        const indToken=document.createElement("span");
-                        indToken.textContent=element;
-                        indToken.style.display="block";
-                        //resultTokens.append(indToken);
-                    });
-
-                    if(typeof queryInput.value !== "string"){
-                        feedbackMsg.textContent="Character type not supported";
-                        feedbackMsg.style.color="red";
-                    }else{
-                        const stopWords = new Set(['a', 'an', 'and', 'the', 'of', 'in', 'on', 
-                            'at', 'to', 'for', 'with', 'by', 'is', 'it', 'this', 'that',
-                            'how', 'do', 'i'
-                        ]);
-                        let newText= queryInput.value
-                            .normalize('NFC')
-                            .replace(/[\u0300-\u036f]/g,"")
-                            .toLowerCase()
-                            .replace(/[^\w\s]|_/g,"")
-                            .trim()
-                            .replace("/\s+/g","")
-                            .split(" ")
-                            .filter(word=> word && !stopWords.has(word))
-                            .join(" ");
-                        const indToken=document.createElement('span');
-                        indToken.textContent=newText;
-                        indToken.style.display="block";
-                        resultTokens.append(indToken);
-                        console.log(newText);
-                        
-                        feedbackMsg.textContent="Success";
-                        feedbackMsg.style.color="green";
-                    }
-                }
-            })
-        </script>
+        <div class="adImgCon">
+            <img src="./images/molex_poster_ad.png" alt="Poster Ad" class="adImg">
+        </div>
     </body>
 </html>
