@@ -1,0 +1,56 @@
+.header{
+    width: 95vw;
+    max-width: 720px;
+    display: flex;
+}
+button{
+    background:none;
+    border: none;
+}
+.logoCon{
+    width: 50%;
+    display: flex;
+}
+.menuBtn .menuBtnImg{
+    max-width: 30px;
+}
+.logoBtn .logoBtnImg{
+    max-width: 100px;
+}
+.searchCon{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.searchBtn .searchBtnImg{
+    max-width: 20px;
+}
+.loginBtn .loginBtnImg{
+    max-width: 30px;
+}
+.searchCon2{
+    width: 95vw;
+    max-width: 720px;
+    display: flex;
+}
+.searchBarCon{
+    width: 90%;
+}
+.searchBar{
+    width: 90%;
+    border: 0.5px solid rgb(202, 202, 202);
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+.searchBtnCon .searchBtn{
+    background-color: #6F00FF;
+    border-radius: 1000px;
+    padding: 5px 7.5px;
+}
+.adImgCon{
+    width: 95vw;
+    max-width: 720px;
+}
+.adImg{
+    width: 100%;
+}
