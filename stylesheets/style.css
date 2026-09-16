@@ -117,7 +117,7 @@ button{
 .topDealsHeader{
     display: flex;
     width: 100%;
-    max-width: 320px;
+    max-width: 360px;
     margin: auto;
 }
 .topDealsCon, .seeAllCon{
@@ -125,10 +125,12 @@ button{
 }
 .topDeals{
     font-weight: bold;
+    margin-left: 10px;
 }
 .seeAllBtn{
     display: flex;
     margin-left: auto;
+    margin-right: 10px;
 }
 .seeAll{
     color: #6F00FF;
@@ -224,16 +226,17 @@ button{
 }
 .bymakeHeader{
     width: 100%;
-    max-width: 320px;
+    max-width: 360px;
     margin: auto;
 }
 .bymake{
     font-weight: bold;
+    margin-left: 10px;
 }
 .bymakeBody{
     width: 100%;
     min-width: 300px;
-    max-width: 340px;
+    max-width: 360px;
     margin: auto;
     margin-top: 25px;
 }
@@ -242,6 +245,89 @@ button{
     border-radius: 20px;
     padding: 5px 10px;
     margin: 5px;
+}
+.shopCarsSec{
+    width: 100%;
+}
+.shopCarsCon{
+    width: 100%;
+    min-width: 200px;
+    max-width: 360px;
+    margin: auto;
+    display: flex;
+    font-size: 12px;
+    border: 1px solid #6F00FF;
+    border-radius: 30px;
+    padding: 3% 2%;
+}
+.carImgCon{
+    width: 50%;
+    display: flex;
+    align-content: center;
+}
+.carInfoCon{
+    width: 50%;
+}
+.carImg1{
+    width: 100%;
+    border-radius: 20px;
+}
+.keyCon{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+.carName1{
+    font-size: 1em;
+    color: #6F00FF;
+    font-weight: bold;
+    margin: auto;
+    margin-left: 10px;
+}
+.keyName{
+    font-size: 0.85em;
+    color: grey;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.carPriceValue{
+    margin: auto 0 auto auto;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: #14AD90;
+}
+.carYearValue{
+    font-size: 0.85em;
+    margin: auto 0 auto auto;
+    color: grey;
+    font-weight: bold;
+}
+.carLocationValue{
+    font-size: 0.85em;
+    width: 95px;
+    margin: auto 0 auto auto;
+    color: grey;
+}
+.carConditionValue{
+    font-size: 0.85em;
+    margin: auto 0 auto auto ;
+    color: grey;
+    background-color: rgb(223, 223, 223);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.saveBtn1{
+    width: 25px;
+    margin-left: 5px;
+}
+.detailsBtn{
+    background-color: #6F00FF;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-left: auto;
+    font-size: 1em;
 }
 
 
