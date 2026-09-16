@@ -76,7 +76,8 @@ button{
 }
 .introTxtCon{
     width: 70%;
-    max-width: 360px;
+    min-width: 200px;
+    max-width: 300px;
     padding: 10px 30px;
     background-image: url("../images/molex_banner.png");
     background-size: 100%;
@@ -86,6 +87,7 @@ button{
     border-radius: 30px;
     aspect-ratio: 16/9;
     font-size: 20px;
+    align-content: center;
 }
 .mainTxt{
     font-size: 0.75em;
@@ -107,4 +109,110 @@ button{
     padding: 5px 10px;
     border-radius: 500px;
     font-size: 0.5em;
+}
+.topDealsSec{
+    width: 95vw;
+}
+.topDealsHeader{
+    display: flex;
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+}
+.topDealsCon, .seeAllCon{
+    width: 50%;
+}
+.topDeals{
+    font-weight: bold;
+}
+.seeAllBtn{
+    display: flex;
+    margin-left: auto;
+}
+.seeAll{
+    color: #6F00FF;
+    margin-right: 5px;
+}
+.seeAllImg{
+    width: 10px;
+    height: 15px;
+    margin: auto;
+}
+.topDealsBody{
+    width: 100%;
+    min-width: 340px;
+    max-width: 380px;
+    display: flex;
+    margin: auto;
+}
+.deal{
+    width: 30%;
+    border: 1px solid #6F00FF;
+    border-radius: 20px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.dealImgCon{
+    height: 60%;
+}
+.dealImg{
+    width:100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.dealInfo{
+    height: 40%;
+    font-size: 10px;
+}
+.nameCon{
+    display: flex;
+    margin: 5px;
+}
+.carName{
+    color:#6F00FF;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0;
+}
+.saveBtn{
+    width: 22px;
+    margin-left: auto;
+    height: fit-content;
+}
+.saveBtnImg{
+    width: 100%;
+    aspect-ratio: 1/1.25;
+}
+.carPrice{
+    font-size: 1.23em;
+    color: #14AD90;
+    font-weight: bold;
+    margin: 0;
+    margin: 5px;
+}
+.carDiscount{
+    font-size: 0.95em;
+    color: rgb(46, 46, 46);
+    margin: 5px;
+}
+.locationCon{
+    display: flex;
+}
+.carLocation{
+    font-size: 0.75em;
+    color: rgb(34, 34, 34);
+    margin: 5px;
+}
+.carCondition{
+    margin-left: auto;
+    margin-right: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: rgb(219, 219, 219);
+    height: fit-content;
+    align-self:center;
+    border-radius: 5px;
+    color: #14AD90;
+    padding: 2.5px 5px;
 }
