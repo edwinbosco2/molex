@@ -1,3 +1,6 @@
+body{
+    font-family: Arial;
+}
 .header{
     width: 95vw;
     max-width: 720px;
@@ -53,4 +56,38 @@ button{
 }
 .adImg{
     width: 100%;
+}
+.introCon{
+    background-image: url("../images/molex_banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #6F00FF;
+    border-radius: 30px;
+    min-width: 360px;
+    max-width: 600px;
+}
+.introTxtCon{
+    width: 70%;
+    padding: 10px 30px;
+}
+.mainTxt{
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+}
+.subTxt{
+    font-size: 12px;
+    color: white;
+}
+.introBtnCon{
+    margin: 30px 0px;
+}
+.introBtn{
+    color: white;
+    background-color: #6F00FF;
+    margin: 20px 20px 0px 0px;
+    padding: 10px 20px;
+    border-radius: 500px;
 }
