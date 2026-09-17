@@ -151,6 +151,7 @@ button{
 }
 .deal{
     width: 30%;
+    min-width: 100px;
     border: 1px solid #6F00FF;
     border-radius: 20px;
     margin: auto;
@@ -333,7 +334,78 @@ button{
     margin-left: auto;
     font-size: 1em;
 }
-
+.newArrivalsSec{
+    width: 100%;
+    margin-top: 50px;
+}
+.newArrivalsHeader{
+    width: 100%;
+    min-width: 320px;
+    max-width: 360px;
+    margin: auto;
+    display: flex;
+}
+.newArrivalsCon, .seeAllCon{
+    width: 50%;
+}
+.newArrivals{
+    font-weight: bold;
+}
+.newArrivalsBody{
+    width: 100%;
+    min-width: 320px;
+    max-width: 360px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.newCar{
+    width: 30%;
+    margin: 20px auto auto auto;
+}
+.newCarImgCon{
+    width: 100%;
+}
+.newCarImg{
+    width: 100%;
+    border: 2px solid #6F00FF;
+    border-radius: 20px;
+}
+.newCarInfoCon{
+    width: 100%;
+    font-size: 12px;
+}
+.newCarNameCon{
+    width: 100%;
+}
+.newCarName{
+    font-size: 0.9em;
+    color: #6F00FF;
+    font-weight: bold;
+    margin: 5px 5px auto 5px;
+}
+.newCarPriceCon{
+    width: 100%;
+}
+.newCarPrice{
+    font-size: 1em;
+    color: #14AD90;
+    font-weight: bold;
+    margin: 10px auto auto 5px;
+}
+.newCarYearCon{
+    width: 100%;
+    display: flex;
+}
+.newCarYear{
+    font-size: 0.8em;
+    color: grey;
+    margin: 10px auto auto 5px;
+}
+.saveBtn2{
+    width: 22.5px;
+    margin: 10px 0px auto auto;
+}
 
 
 
