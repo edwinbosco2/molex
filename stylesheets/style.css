@@ -15,7 +15,49 @@ button{
     display: flex;
 }
 .menuBtn .menuBtnImg{
-    max-width: 30px;
+    max-width: 20px;
+}
+.menuBarCon{
+    width: 200px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgb(71, 71, 71);
+    border-radius: 30px;
+    margin-top: 50px;
+    font-size: 13px;
+    display: none;
+}
+.menuTitleCon{
+    width: 80%;
+    margin: 20px auto auto auto ;
+    background-color: #6F00FF;
+    padding: 5px;
+    border-radius: 20px;
+}
+.menuTitle{
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.menuItemsCon{
+    width: 100%;
+    margin: auto;
+}
+.menuItems{
+    list-style: none;
+}
+.menuItemCon{
+    display: flex;
+}
+.menuItem{
+    margin-top: 30px;
+}
+.menuItemIcon{
+    width: 17px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 30px;
 }
 .logoBtn .logoBtnImg{
     max-width: 100px;
