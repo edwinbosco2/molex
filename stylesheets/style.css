@@ -1,27 +1,76 @@
 body{
     font-family: Arial;
+    margin-top: 0;
 }
 .header{
-    width: 95vw;
-    max-width: 720px;
+    width: 100%;
     display: flex;
+    margin: auto;
+    position: fixed;
+    background-color: white;
+    padding: 5px;
+    justify-content: center;
 }
 button{
     background:none;
     border: none;
 }
 .logoCon{
-    width: 50%;
+    width: 30%;
+    min-width: 180px;
     display: flex;
 }
 .menuBtn .menuBtnImg{
-    max-width: 30px;
+    max-width: 20px;
+}
+.menuBarCon{
+    width: 200px;
+    position: fixed;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgba(17, 17, 17, 0.473);
+    border-radius: 30px;
+    margin-top: 50px;
+    font-size: 13px;
+    display: none;
+}
+.menuTitleCon{
+    width: 80%;
+    margin: 20px auto auto auto ;
+    background-color: #6F00FF;
+    padding: 5px;
+    border-radius: 20px;
+}
+.menuTitle{
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.menuItemsCon{
+    width: 100%;
+    margin: auto;
+}
+.menuItems{
+    list-style: none;
+}
+.menuItemCon{
+    display: flex;
+}
+.menuItem{
+    margin-top: 30px;
+}
+.menuItemIcon{
+    width: 17px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 30px;
 }
 .logoBtn .logoBtnImg{
     max-width: 100px;
 }
 .searchCon{
-    width: 50%;
+    width: 30%;
+    min-width: 180px;
     display: flex;
     justify-content: flex-end;
 }
@@ -38,6 +87,7 @@ button{
     justify-content: center;
 }
 .searchBarCon{
+    margin-top: 50px;
     display: flex;
     width: 100%;
     align-items: center;
@@ -46,7 +96,7 @@ button{
 .searchBar{
     width: 90%;
     min-width: 90px;
-    max-width: 350px;
+    max-width: 250px;
     border: 0.5px solid rgb(202, 202, 202);
     border-radius: 30px;
     padding: 5px 10px;
@@ -55,6 +105,11 @@ button{
     background-color: #6F00FF;
     border-radius: 1000px;
     padding: 5px 7.5px;
+    margin-left: 10px;
+}
+.searchBtnCon .searchBtn .searchBtnImg{
+    width: 15px;
+    margin-top: 3px;
 }
 .adImgCon{
     width: 95vw;
@@ -250,11 +305,23 @@ button{
 .shopCarsSec{
     width: 100%;
     margin-top: 70px;
+    font-weight: bold;
+}
+.shopCarsHeader{
+    width: 100%;
+    max-width: 340px;
+    margin: auto;
+    border-bottom: 2px solid #6F00FF;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    padding-left: 10px;
 }
 .shopCarsCon{
     width: fit-content;
-    min-width: 320px;
-    max-width: 360px;
+    height: fit-content;
+    max-height: 150px;
+    min-width: 200px;
+    max-width: 250px;
     margin: auto;
     margin-top: 20px;
     display: flex;
@@ -262,7 +329,7 @@ button{
     font-size: 12px;
     border: 1px solid #6F00FF;
     border-radius: 30px;
-    padding: 3% 2%;
+    padding: 15px 10px;
 }
 .carImgCon{
     width: 50%;
@@ -279,17 +346,18 @@ button{
 .keyCon{
     display: flex;
     width: 100%;
-    margin-top: 10px;
+    margin-bottom: 2px;
+    margin-top: 5px;
 }
 .carName1{
-    font-size: 1em;
+    font-size: 0.9em;
     color: #6F00FF;
     font-weight: bold;
     margin: auto;
     margin-left: 10px;
 }
 .keyName{
-    font-size: 0.85em;
+    font-size: 0.7em;
     color: grey;
     margin: auto;
     margin-left: 10px;
@@ -297,29 +365,30 @@ button{
 }
 .carPriceValue{
     margin: auto 0 auto auto;
-    font-size: 0.95em;
+    font-size: 0.8em;
     font-weight: bold;
     color: #14AD90;
 }
 .carYearValue{
-    font-size: 0.85em;
+    font-size: 0.7em;
     margin: auto 0 auto auto;
     color: grey;
     font-weight: bold;
 }
 .carLocationValue{
-    font-size: 0.85em;
-    width: 95px;
+    font-size: 0.7em;
+    height: 20px;
+    overflow-y: hidden;
     margin: auto 0 auto auto;
     color: grey;
     text-align: right;
 }
 .carConditionValue{
-    font-size: 0.85em;
+    font-size: 0.7em;
     margin: auto 0 auto auto ;
     color: grey;
     background-color: rgb(223, 223, 223);
-    padding: 5px 10px;
+    padding: 2px 5px;
     border-radius: 10px;
 }
 .saveBtn1{
@@ -332,7 +401,7 @@ button{
     padding: 5px 10px;
     border-radius: 20px;
     margin-left: auto;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 .newArrivalsSec{
     width: 100%;
@@ -350,6 +419,7 @@ button{
 }
 .newArrivals{
     font-weight: bold;
+    padding-left: 10px;
 }
 .newArrivalsBody{
     width: 100%;
@@ -411,7 +481,7 @@ button{
 
 .footer{
     width: 100%;
-    height: 300px;
+    height: 600px;
     background-color: #6F00FF;
     margin: auto;
     margin-top: 200px;
