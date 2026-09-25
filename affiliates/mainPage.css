@@ -1,0 +1,30 @@
+.header{
+    position: relative;
+}
+.searchCon2{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.affiliateProductsHeader{
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+}
+.mylinksPanel, .bymakePanel, .bysupplierPanel{
+    width: 33%;
+    border-bottom: 1px solid #6F00FF;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    color: grey;
+}
+.mylinksPanel{
+    border-bottom: 3px solid #6F00FF;
+    color: #6F00FF;
+}
+.affiliateProductsBody{
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+}
