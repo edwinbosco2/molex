@@ -476,6 +476,92 @@ button{
     width: 22.5px;
     margin: 10px 0px auto auto;
 }
+.signUpFormCon{
+    width: 100%;
+    max-width: 270px;
+    box-shadow: 0px 0px 20px grey;
+    margin: auto;
+    padding: 30px;
+    border-radius: 50px;
+}
+.signUpForm{
+    width: 80%;
+    margin: auto;
+    font-size: 15px;
+}
+.signUp{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #6F00FF;
+    margin: auto auto auto 0px;
+}
+.signUpMetaTxt{
+    margin-bottom: 50px;
+}
+.signUpForm div{
+    margin: 20px auto auto 0px;
+}
+.signUpForm input{
+    border: 0.1em solid #c193fd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+.termsCheckboxCon{
+    display: flex;
+    width: 100%;
+}
+.termsCheckbox{
+
+}
+.termsCheckboxText{
+    font-size: 0.75em;
+    width: 300px;
+} 
+.submitBtnCon{
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px 5px;
+}
+.submitBtn{
+    width: 100%;
+    background-color: #6F00FF;  
+    color: white;
+    border-radius: 500px;
+    border: none;
+}
+.signInFormCon{
+    width: 100%;
+    max-width: 270px;
+    box-shadow: 0px 0px 20px grey;
+    margin: auto;
+    padding: 30px;
+    border-radius: 50px;
+}
+.signInForm{
+    width: 80%;
+    margin: auto;
+    font-size: 15px;
+}
+.signIn{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #6F00FF;
+    margin: auto auto auto 0px;
+}
+.signInMetaTxt{
+    margin-bottom: 50px;
+}
+.signInForm div{
+    margin: 20px auto auto 0px;
+}
+.signInForm input{
+    border: 0.1em solid #c193fd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
 
 
 
